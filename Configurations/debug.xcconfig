@@ -1,0 +1,11 @@
+//
+//  debug.xcconfig
+//  VCamera
+//
+//  Created by VassilyChi on 2021/5/28.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Configurations/common.xcconfig"

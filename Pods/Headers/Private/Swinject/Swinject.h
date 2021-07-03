@@ -1,0 +1,1 @@
+/Users/vassilychi/Library/Caches/CocoaPods/v1/Pods/Release/Swinject/2.7.1-ddf78/Sources/Swinject.h

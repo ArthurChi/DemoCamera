@@ -1,0 +1,14 @@
+version_locks:
+  Swinject:
+    binary: false
+    checksum: ddf78b8486dd9b71a667b852cad919ab4484478e
+    source_code:
+      git: https://github.com/Swinject/Swinject.git
+      tag: 2.7.1
+    spec: https://github.com/cocoapods/specs.git
+    version: 2.7.1
+
+binary_info:
+  binary: 0
+  rate: 0.0
+  source: 1

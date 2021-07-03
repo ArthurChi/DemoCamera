@@ -1,0 +1,6 @@
+module Pods_VCamera {
+  umbrella header "Pods-VCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

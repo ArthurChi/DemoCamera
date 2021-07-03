@@ -1,0 +1,8 @@
+include:
+  - Templates.yml
+targets:
+  Authority:
+    templates:
+      - module_framework
+    templateAttributes:
+      COMPONENT_NAME: "Authority"
