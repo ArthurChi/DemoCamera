@@ -3,26 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B4116961D06EFB9A70C14C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF91225ED66139B6138C4C /* ViewController.swift */; };
-		11FE9F0584B63C27385EC10C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F59F6429C5D48F71DDAADC /* AppDelegate.swift */; };
+		0121B08C44E33E6CF05B7069 /* CameraRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0433B70B3CE785D3F704AC /* CameraRatio.swift */; };
+		0B742C84B4EC131B1ED2F8E1 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E54E415343067C00C570 /* MetalViewController.swift */; };
+		1BEBB627545F6C7A998514A9 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B6A1694C201757130CF4 /* CameraManager.swift */; };
+		22CD20DFA38846C797255E39 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FE9B2DDBDB8C3D98069BF /* PhotoCaptureProcessor.swift */; };
 		28F333A0D367AC0C6980F890 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2637396023E5F99C09EFE6DC /* AVFoundation.framework */; };
-		7374E4F934309A1327C6302F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2E3FC855089B8C8D2BB0B /* Video.swift */; };
-		8A596461B21870953D943C0F /* libPods-VCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EF8B5D0DDB07EA1320F992 /* libPods-VCamera.a */; };
+		297EA902A53380D5CDF9F1C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DCD2D64773D58CE6EA33AA /* AppDelegate.swift */; };
+		2B3D573F46AE23CB132B3074 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB0D41AC333D68A8F895B /* Photo.swift */; };
+		2C68F7834EF0A24A622F70AF /* Galilei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9364086DE609D12B0FD63FF /* Galilei.framework */; };
+		2F8497AC2D46FC037CCF4CA4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65043CBA0F21A86633CE8351 /* Photos.framework */; };
+		41D8E419A051CB100DBE517F /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 811C51F6196A7DA4184734AD /* Shader.metal */; };
+		466EA7EC6B35B125DB42FCB0 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36BC69D05FF25C557F17B17 /* NiblessView.swift */; };
+		474F30B9716CCB8CF733889B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8B8372DED6F44E9B8D423 /* SceneDelegate.swift */; };
+		4DCB4DD075B918842614C81E /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9289889A1BB5A6CBAF06FDC /* Filter.swift */; };
+		4F0823765D2CF5107E6C70DA /* EditorImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F52ADDE6D6476A583E79A1 /* EditorImageViewController.swift */; };
+		51A5B18E51D04A3655962A34 /* CameraToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7447F9980ECE6F5C21A956 /* CameraToolBar.swift */; };
+		5A5E67E3D6D551895F5A629F /* CameraCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9288C80D9A6EB906A72DEA2 /* CameraCaptureButton.swift */; };
+		5B41F3742235E0F0B41126D9 /* MovieWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773CB0CC2D0AD3E999FDF8C /* MovieWriter.swift */; };
+		61BDD685B1C746F52EA28551 /* Vincent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA6ADACBB25824FBDC390D0 /* Vincent.framework */; };
+		655B82A242A4EDDF08333413 /* MetalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F814A4C75C319050D941C662 /* MetalViewModel.swift */; };
+		65BB7AFDBE727803C7092821 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B25E1B9B6B9B5052C690E3 /* Audio.swift */; };
+		72148D634E8934F14FB96BE9 /* MessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520F73EC923E280AD174D2C /* MessageQueue.swift */; };
+		7E7E39544A296FB8C52922FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85FE54E1BD36C06A47086C /* ViewController.swift */; };
+		80F86D0D5C0D93FC749B5130 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1DB80C207C54AE4F059780 /* float4x4+Extensions.swift */; };
 		8E5A154C28945BC87CF3E00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BC94A111156C13E6508997 /* Main.storyboard */; };
-		91296C2C9BDDB03EE919F946 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EA5932C5B0F087856F46E /* Photo.swift */; };
+		967F2B2DFFAF6E5A1D062F55 /* RatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AD837A54540B96B97BEA3 /* RatioView.swift */; };
 		984B69F434F5F988818BF31B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEEB8E93115C86EB35208E0 /* LaunchScreen.storyboard */; };
+		A9F03DF03AFC137C20D19E40 /* EditorImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903A579EA2591CCCA4B38A1 /* EditorImageDisplayView.swift */; };
 		B284D7D868901DA7EF8C748C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A9EB5A607E0C10DE655953 /* Assets.xcassets */; };
-		BF28C7E2B572F91D6CA56F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B3A4899A91CA0D3901086 /* SceneDelegate.swift */; };
+		BE1355D1BEA7B4B308BCBDAB /* MediaBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF6D25C204C4A11068FD4EB /* MediaBox.framework */; };
+		BF144AC2D830A335F2BA2288 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F56AABF0CFA3E9598A891E /* AppDependency.swift */; };
+		BF6F6C21E969A7C1C0CA2915 /* RenderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9458AA3FD869A7CAF3769B /* RenderProtocols.swift */; };
+		CCDB4C0FB3669BE808404C73 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DEC8CFC1AB505FFAD4649 /* Render.swift */; };
+		D209EC0E26905B4A00E896DA /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D209EC0D26905B4A00E896DA /* CombineCocoa */; };
+		D209EC1126905BB700E896DA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D209EC1026905BB700E896DA /* Swinject */; };
+		D209EC1426905BF300E896DA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D209EC1326905BF300E896DA /* SnapKit */; };
+		D78ACC4C2E99B466D3991F4D /* MainViewDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348C1BAF4B190ED324A9636 /* MainViewDependency.swift */; };
 		E4167C051A946566907F4C06 /* Authority.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D56CEFB2BE2E0995624DD63 /* Authority.framework */; };
-		F164A4AD1BA31EB547BC4D19 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAD29C62E110715ED58224 /* Audio.swift */; };
-		FFA45FBC548FB187AC60D476 /* Authority.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FC7DDC52E6EB27D2AF268C /* Authority.swift */; };
+		E493E24C42822D640897410C /* RenderDeivceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47574119FD5EA2B5F415C729 /* RenderDeivceResource.swift */; };
+		E7D08D521758D4C6F536D61D /* EditorImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7812C0B6C010CFF73CBC4773 /* EditorImageViewModel.swift */; };
+		ED50EEEDCB765C0EF56DA72A /* CameraManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEE71FFEF3F19931140AC94 /* CameraManagerError.swift */; };
+		EDED211AF733FE7384ADB7D3 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4C15428692C6DF7CADA7 /* Video.swift */; };
+		EE41212A6E2B6A11DE615884 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613F34057EC4CA68D05606C5 /* NiblessViewController.swift */; };
+		EE46B2586EB32F934F40399A /* EditorDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560B3EF50AD88A4D6323518 /* EditorDependency.swift */; };
+		EF27C6FD50DDFE2B75975FD7 /* MainCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D9D73DF25B199AFE5945E /* MainCameraViewController.swift */; };
+		FD0E2DD54324A5CEC839A805 /* MainCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B0E39A2D09F73833A833E /* MainCameraViewModel.swift */; };
+		FF98892C9D20A12A110E069A /* Authority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB08A98D39859DFED18791 /* Authority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2D4DBCE50CAD67F4029F9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6342E4E59168A024136F7FF6;
+			remoteInfo = Galilei;
+		};
 		6B5F1B59F52E8D4ACF55800B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
@@ -30,37 +70,95 @@
 			remoteGlobalIDString = 8EED815AE551847B579335A0;
 			remoteInfo = Authority;
 		};
+		9038857841FBA2D78C093E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1FA40B2551CEBB2CCE77C69;
+			remoteInfo = Vincent;
+		};
+		C55BCE0DED2098AD9B8947D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1FA40B2551CEBB2CCE77C69;
+			remoteInfo = Vincent;
+		};
+		CB9C0F59673008DBC921F129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EED815AE551847B579335A0;
+			remoteInfo = Authority;
+		};
+		E55DB6F4606B04A8A3DCA354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2D19F58DA875D84AA6D63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DADBCD74824BC7839309521;
+			remoteInfo = MediaBox;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B25E1B9B6B9B5052C690E3 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		0DCF4C15428692C6DF7CADA7 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		12DCD2D64773D58CE6EA33AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		145AD837A54540B96B97BEA3 /* RatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioView.swift; sourceTree = "<group>"; };
+		1AA6ADACBB25824FBDC390D0 /* Vincent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = Vincent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C85FE54E1BD36C06A47086C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D56CEFB2BE2E0995624DD63 /* Authority.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = Authority.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DA2E3FC855089B8C8D2BB0B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		1F1DB80C207C54AE4F059780 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
 		2637396023E5F99C09EFE6DC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		26B3D933D83424C1142AEFE3 /* Pods-VCamera.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-VCamera.release.xcconfig"; sourceTree = "<group>"; };
-		26EF8B5D0DDB07EA1320F992 /* libPods-VCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AB08A98D39859DFED18791 /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
 		2D4734D0EA6A323380A5907F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C3E54E415343067C00C570 /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
 		36A9EB5A607E0C10DE655953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37CAD29C62E110715ED58224 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		39AFCB141FCCD33F677E833C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		470B3A4899A91CA0D3901086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47574119FD5EA2B5F415C729 /* RenderDeivceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderDeivceResource.swift; sourceTree = "<group>"; };
+		4FEE71FFEF3F19931140AC94 /* CameraManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManagerError.swift; sourceTree = "<group>"; };
 		5122DA0484B0405AA452862A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		62F59F6429C5D48F71DDAADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E03781188B204BF0E1C579A /* Pods-VCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCamera.debug.xcconfig"; path = "Target Support Files/Pods-VCamera/Pods-VCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		613F34057EC4CA68D05606C5 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		646DEC8CFC1AB505FFAD4649 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
+		65043CBA0F21A86633CE8351 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		6560B3EF50AD88A4D6323518 /* EditorDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDependency.swift; sourceTree = "<group>"; };
+		657FE9B2DDBDB8C3D98069BF /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		7812C0B6C010CFF73CBC4773 /* EditorImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorImageViewModel.swift; sourceTree = "<group>"; };
+		811C51F6196A7DA4184734AD /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		9348C1BAF4B190ED324A9636 /* MainViewDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewDependency.swift; sourceTree = "<group>"; };
 		938BAD83E9483F27127D1446 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
-		9A10548881F0B6E34EF0AF55 /* Pods-VCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCamera.release.xcconfig"; path = "Target Support Files/Pods-VCamera/Pods-VCamera.release.xcconfig"; sourceTree = "<group>"; };
-		B32EA5932C5B0F087856F46E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		BACF91225ED66139B6138C4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9520F73EC923E280AD174D2C /* MessageQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQueue.swift; sourceTree = "<group>"; };
+		9F9458AA3FD869A7CAF3769B /* RenderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderProtocols.swift; sourceTree = "<group>"; };
+		A3D8B6A1694C201757130CF4 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		A9C8B8372DED6F44E9B8D423 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B39B0E39A2D09F73833A833E /* MainCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCameraViewModel.swift; sourceTree = "<group>"; };
+		B773CB0CC2D0AD3E999FDF8C /* MovieWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWriter.swift; sourceTree = "<group>"; };
+		B9288C80D9A6EB906A72DEA2 /* CameraCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureButton.swift; sourceTree = "<group>"; };
+		C3F52ADDE6D6476A583E79A1 /* EditorImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorImageViewController.swift; sourceTree = "<group>"; };
 		C7DB2F22DA71F549A0F6522E /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		CDF08CF991690DCB2ED9CC99 /* Pods-VCamera.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-VCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		E5FC7DDC52E6EB27D2AF268C /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
+		CB40DDD8645AA6D8538CEFD8 /* libPods-VCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0433B70B3CE785D3F704AC /* CameraRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRatio.swift; sourceTree = "<group>"; };
+		D36BC69D05FF25C557F17B17 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		DBF6D25C204C4A11068FD4EB /* MediaBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = MediaBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F56AABF0CFA3E9598A891E /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		E903A579EA2591CCCA4B38A1 /* EditorImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorImageDisplayView.swift; sourceTree = "<group>"; };
+		E9289889A1BB5A6CBAF06FDC /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		E9364086DE609D12B0FD63FF /* Galilei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = Galilei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5BB0FC852AA004121205F4 /* VCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36EB0D41AC333D68A8F895B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		F814A4C75C319050D941C662 /* MetalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewModel.swift; sourceTree = "<group>"; };
+		FD4D9D73DF25B199AFE5945E /* MainCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCameraViewController.swift; sourceTree = "<group>"; };
+		FF7447F9980ECE6F5C21A956 /* CameraToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraToolBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		08801DC793B35412984BCD53 /* Frameworks */ = {
+		2D2286B83ADC279F05F6E666 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D209EC1426905BF300E896DA /* SnapKit in Frameworks */,
+				D209EC0E26905B4A00E896DA /* CombineCocoa in Frameworks */,
+				D209EC1126905BB700E896DA /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,63 +167,103 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4167C051A946566907F4C06 /* Authority.framework in Frameworks */,
+				2C68F7834EF0A24A622F70AF /* Galilei.framework in Frameworks */,
+				61BDD685B1C746F52EA28551 /* Vincent.framework in Frameworks */,
+				BE1355D1BEA7B4B308BCBDAB /* MediaBox.framework in Frameworks */,
 				28F333A0D367AC0C6980F890 /* AVFoundation.framework in Frameworks */,
-				8A596461B21870953D943C0F /* libPods-VCamera.a in Frameworks */,
+				2F8497AC2D46FC037CCF4CA4 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A8EFC00AB16238164BFB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EFEFD8385264BD6E7B8603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA7320675D7E0B780BE62FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0320B3D5282C432E7C7792A2 /* Target Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C0F953193444B0CC11FE7834 /* Pods-VCamera */,
-			);
-			path = "Target Support Files";
-			sourceTree = "<group>";
-		};
 		0D0CC8ED847E66C654B40315 /* Authority */ = {
 			isa = PBXGroup;
 			children = (
-				94BD27904FE646396155CF48 /* Classes */,
+				27AB08A98D39859DFED18791 /* Authority.swift */,
+				5F3DACA5E9408E8755F50D81 /* Audio */,
+				8640429B57B40974DC5A8651 /* Photo */,
+				B617FDBC8449EEF68D15F4BA /* Video */,
 			);
 			path = Authority;
 			sourceTree = "<group>";
 		};
-		23E6FBF923CFE2B2F821B41E /* Photo */ = {
+		307A46453739348FF6EB936B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B32EA5932C5B0F087856F46E /* Photo.swift */,
+				D36BC69D05FF25C557F17B17 /* NiblessView.swift */,
+				613F34057EC4CA68D05606C5 /* NiblessViewController.swift */,
 			);
-			path = Photo;
-			sourceTree = "<group>";
-		};
-		2FD16E41852AFAE0108F791B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0320B3D5282C432E7C7792A2 /* Target Support Files */,
-				6E03781188B204BF0E1C579A /* Pods-VCamera.debug.xcconfig */,
-				9A10548881F0B6E34EF0AF55 /* Pods-VCamera.release.xcconfig */,
-			);
-			path = Pods;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		31F736CDAC9070B87F295556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2637396023E5F99C09EFE6DC /* AVFoundation.framework */,
-				26EF8B5D0DDB07EA1320F992 /* libPods-VCamera.a */,
+				65043CBA0F21A86633CE8351 /* Photos.framework */,
+				CB40DDD8645AA6D8538CEFD8 /* libPods-VCamera.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3874A52D02C27ABE96D516F9 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				646DEC8CFC1AB505FFAD4649 /* Render.swift */,
+				47574119FD5EA2B5F415C729 /* RenderDeivceResource.swift */,
+				9F9458AA3FD869A7CAF3769B /* RenderProtocols.swift */,
+			);
+			path = Render;
 			sourceTree = "<group>";
 		};
 		38EA838E800931D1F35FDFBE /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				0D0CC8ED847E66C654B40315 /* Authority */,
+				8C4343F1E3FF8D59CCCA4854 /* Galilei */,
+				58339942864F3D26EDFF2050 /* MediaBox */,
+				A27DEAA7EFA5D94BE249EF59 /* Vincent */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		3AA1B002BCAB308FFC24AE19 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1F1DB80C207C54AE4F059780 /* float4x4+Extensions.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3EAC1005291559C7CBD63B83 /* Ratio */ = {
+			isa = PBXGroup;
+			children = (
+				145AD837A54540B96B97BEA3 /* RatioView.swift */,
+			);
+			path = Ratio;
 			sourceTree = "<group>";
 		};
 		407468A429ABAF4288BF1712 /* Configurations */ = {
@@ -137,38 +275,121 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		431297E10F9A19829FECAD65 /* MainCamera */ = {
+			isa = PBXGroup;
+			children = (
+				FD4D9D73DF25B199AFE5945E /* MainCameraViewController.swift */,
+				B39B0E39A2D09F73833A833E /* MainCameraViewModel.swift */,
+				1C85FE54E1BD36C06A47086C /* ViewController.swift */,
+				455C2DB089BAA1AF3F650871 /* View */,
+			);
+			path = MainCamera;
+			sourceTree = "<group>";
+		};
+		455C2DB089BAA1AF3F650871 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9288C80D9A6EB906A72DEA2 /* CameraCaptureButton.swift */,
+				FF7447F9980ECE6F5C21A956 /* CameraToolBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58339942864F3D26EDFF2050 /* MediaBox */ = {
+			isa = PBXGroup;
+			children = (
+				9520F73EC923E280AD174D2C /* MessageQueue.swift */,
+				B773CB0CC2D0AD3E999FDF8C /* MovieWriter.swift */,
+			);
+			path = MediaBox;
+			sourceTree = "<group>";
+		};
+		5B8D1B77042E2B9A49F497D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				12DCD2D64773D58CE6EA33AA /* AppDelegate.swift */,
+				E0F56AABF0CFA3E9598A891E /* AppDependency.swift */,
+				9348C1BAF4B190ED324A9636 /* MainViewDependency.swift */,
+				A9C8B8372DED6F44E9B8D423 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5F3DACA5E9408E8755F50D81 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				04B25E1B9B6B9B5052C690E3 /* Audio.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		64923F70005644181BA055FE /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				6560B3EF50AD88A4D6323518 /* EditorDependency.swift */,
+				E903A579EA2591CCCA4B38A1 /* EditorImageDisplayView.swift */,
+				C3F52ADDE6D6476A583E79A1 /* EditorImageViewController.swift */,
+				7812C0B6C010CFF73CBC4773 /* EditorImageViewModel.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		719544C5CA8505BEADA0D5A6 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E54E415343067C00C570 /* MetalViewController.swift */,
+				F814A4C75C319050D941C662 /* MetalViewModel.swift */,
+				657FE9B2DDBDB8C3D98069BF /* PhotoCaptureProcessor.swift */,
+				811C51F6196A7DA4184734AD /* Shader.metal */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		834A6F466746C3A2E516660E /* VCamera */ = {
 			isa = PBXGroup;
 			children = (
-				62F59F6429C5D48F71DDAADC /* AppDelegate.swift */,
 				36A9EB5A607E0C10DE655953 /* Assets.xcassets */,
 				5122DA0484B0405AA452862A /* Info.plist */,
 				5AEEB8E93115C86EB35208E0 /* LaunchScreen.storyboard */,
 				90BC94A111156C13E6508997 /* Main.storyboard */,
-				470B3A4899A91CA0D3901086 /* SceneDelegate.swift */,
-				BACF91225ED66139B6138C4C /* ViewController.swift */,
+				307A46453739348FF6EB936B /* Base */,
+				64923F70005644181BA055FE /* Editor */,
+				5B8D1B77042E2B9A49F497D2 /* Main */,
+				431297E10F9A19829FECAD65 /* MainCamera */,
+				719544C5CA8505BEADA0D5A6 /* Preview */,
+				3EAC1005291559C7CBD63B83 /* Ratio */,
 			);
 			path = VCamera;
+			sourceTree = "<group>";
+		};
+		8640429B57B40974DC5A8651 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F36EB0D41AC333D68A8F895B /* Photo.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		8C4343F1E3FF8D59CCCA4854 /* Galilei */ = {
+			isa = PBXGroup;
+			children = (
+				A3D8B6A1694C201757130CF4 /* CameraManager.swift */,
+				4FEE71FFEF3F19931140AC94 /* CameraManagerError.swift */,
+				CF0433B70B3CE785D3F704AC /* CameraRatio.swift */,
+			);
+			path = Galilei;
 			sourceTree = "<group>";
 		};
 		8C5668E5E48271924C745C25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1D56CEFB2BE2E0995624DD63 /* Authority.framework */,
+				E9364086DE609D12B0FD63FF /* Galilei.framework */,
+				DBF6D25C204C4A11068FD4EB /* MediaBox.framework */,
 				EB5BB0FC852AA004121205F4 /* VCamera.app */,
+				1AA6ADACBB25824FBDC390D0 /* Vincent.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		94BD27904FE646396155CF48 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E5FC7DDC52E6EB27D2AF268C /* Authority.swift */,
-				B1A17772122061AD1A107B91 /* Audio */,
-				23E6FBF923CFE2B2F821B41E /* Photo */,
-				F2290C07B6B2E6B6A39A3A45 /* Video */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		9BF0EDF8C567A8C9A23BF3B8 = {
@@ -176,36 +397,36 @@
 			children = (
 				38EA838E800931D1F35FDFBE /* Component */,
 				407468A429ABAF4288BF1712 /* Configurations */,
-				2FD16E41852AFAE0108F791B /* Pods */,
 				834A6F466746C3A2E516660E /* VCamera */,
 				31F736CDAC9070B87F295556 /* Frameworks */,
 				8C5668E5E48271924C745C25 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B1A17772122061AD1A107B91 /* Audio */ = {
+		A27DEAA7EFA5D94BE249EF59 /* Vincent */ = {
 			isa = PBXGroup;
 			children = (
-				37CAD29C62E110715ED58224 /* Audio.swift */,
+				3AA1B002BCAB308FFC24AE19 /* Base */,
+				CD75CEBCBF7356F90BC558D5 /* Filter */,
+				3874A52D02C27ABE96D516F9 /* Render */,
 			);
-			path = Audio;
+			path = Vincent;
 			sourceTree = "<group>";
 		};
-		C0F953193444B0CC11FE7834 /* Pods-VCamera */ = {
+		B617FDBC8449EEF68D15F4BA /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				CDF08CF991690DCB2ED9CC99 /* Pods-VCamera.debug.xcconfig */,
-				26B3D933D83424C1142AEFE3 /* Pods-VCamera.release.xcconfig */,
-			);
-			path = "Pods-VCamera";
-			sourceTree = "<group>";
-		};
-		F2290C07B6B2E6B6A39A3A45 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				1DA2E3FC855089B8C8D2BB0B /* Video.swift */,
+				0DCF4C15428692C6DF7CADA7 /* Video.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		CD75CEBCBF7356F90BC558D5 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				E9289889A1BB5A6CBAF06FDC /* Filter.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +436,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 152A9DF389220559A593E952 /* Build configuration list for PBXNativeTarget "VCamera" */;
 			buildPhases = (
-				D7F06BB017F2BF1C76A23976 /* [CP] Check Pods Manifest.lock */,
 				AA34E742A9B9C4781F6F648F /* Sources */,
 				245B566575F5B962706BE1E6 /* Resources */,
 				2F753E588DA15FCC71E0ABB6 /* Frameworks */,
@@ -224,26 +444,84 @@
 			);
 			dependencies = (
 				1D48FADC453AA3331773C3FC /* PBXTargetDependency */,
+				E4BC28CC08D85DEBFA4AB3DD /* PBXTargetDependency */,
+				AD4CFC4E49A1B79578C5D1BF /* PBXTargetDependency */,
+				8915CB1A80609D58C7980DB3 /* PBXTargetDependency */,
 			);
 			name = VCamera;
 			productName = VCamera;
 			productReference = EB5BB0FC852AA004121205F4 /* VCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3DADBCD74824BC7839309521 /* MediaBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E726C57BBEE9076FF1468575 /* Build configuration list for PBXNativeTarget "MediaBox" */;
+			buildPhases = (
+				B01099316EAE73E6156E5407 /* Sources */,
+				9BA7320675D7E0B780BE62FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42927DF958B0C123843D811E /* PBXTargetDependency */,
+			);
+			name = MediaBox;
+			productName = MediaBox;
+			productReference = DBF6D25C204C4A11068FD4EB /* MediaBox.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+		6342E4E59168A024136F7FF6 /* Galilei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE642C6055AD5C0AEBF420A /* Build configuration list for PBXNativeTarget "Galilei" */;
+			buildPhases = (
+				20A4A7C34F54121C0B0C4CBD /* Sources */,
+				34EFEFD8385264BD6E7B8603 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9E34A5B3CACE5BAC2085822 /* PBXTargetDependency */,
+			);
+			name = Galilei;
+			productName = Galilei;
+			productReference = E9364086DE609D12B0FD63FF /* Galilei.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
 		8EED815AE551847B579335A0 /* Authority */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A12E197A2C2F5CA92BADE9A /* Build configuration list for PBXNativeTarget "Authority" */;
 			buildPhases = (
 				7244DBC6D85ECF90C5C29238 /* Sources */,
-				08801DC793B35412984BCD53 /* Frameworks */,
+				2D2286B83ADC279F05F6E666 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Authority;
+			packageProductDependencies = (
+				D209EC0D26905B4A00E896DA /* CombineCocoa */,
+				D209EC1026905BB700E896DA /* Swinject */,
+				D209EC1326905BF300E896DA /* SnapKit */,
+			);
 			productName = Authority;
 			productReference = 1D56CEFB2BE2E0995624DD63 /* Authority.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+		E1FA40B2551CEBB2CCE77C69 /* Vincent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC570C9ED63BC8D06E5A325 /* Build configuration list for PBXNativeTarget "Vincent" */;
+			buildPhases = (
+				252BD795B0142066E5C51424 /* Sources */,
+				33A8EFC00AB16238164BFB1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vincent;
+			productName = Vincent;
+			productReference = 1AA6ADACBB25824FBDC390D0 /* Vincent.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
 /* End PBXNativeTarget section */
@@ -264,12 +542,20 @@
 				en,
 			);
 			mainGroup = 9BF0EDF8C567A8C9A23BF3B8;
+			packageReferences = (
+				D209EC0C26905B4A00E896DA /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				D209EC0F26905BB700E896DA /* XCRemoteSwiftPackageReference "Swinject" */,
+				D209EC1226905BF300E896DA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8C5668E5E48271924C745C25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8EED815AE551847B579335A0 /* Authority */,
+				6342E4E59168A024136F7FF6 /* Galilei */,
+				3DADBCD74824BC7839309521 /* MediaBox */,
 				1621D68C3395160A5E234E65 /* VCamera */,
+				E1FA40B2551CEBB2CCE77C69 /* Vincent */,
 			);
 		};
 /* End PBXProject section */
@@ -287,40 +573,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D7F06BB017F2BF1C76A23976 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		20A4A7C34F54121C0B0C4CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VCamera-checkManifestLockResult.txt",
+				1BEBB627545F6C7A998514A9 /* CameraManager.swift in Sources */,
+				ED50EEEDCB765C0EF56DA72A /* CameraManagerError.swift in Sources */,
+				0121B08C44E33E6CF05B7069 /* CameraRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
+		252BD795B0142066E5C51424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB4DD075B918842614C81E /* Filter.swift in Sources */,
+				CCDB4C0FB3669BE808404C73 /* Render.swift in Sources */,
+				E493E24C42822D640897410C /* RenderDeivceResource.swift in Sources */,
+				BF6F6C21E969A7C1C0CA2915 /* RenderProtocols.swift in Sources */,
+				80F86D0D5C0D93FC749B5130 /* float4x4+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7244DBC6D85ECF90C5C29238 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F164A4AD1BA31EB547BC4D19 /* Audio.swift in Sources */,
-				FFA45FBC548FB187AC60D476 /* Authority.swift in Sources */,
-				91296C2C9BDDB03EE919F946 /* Photo.swift in Sources */,
-				7374E4F934309A1327C6302F /* Video.swift in Sources */,
+				65BB7AFDBE727803C7092821 /* Audio.swift in Sources */,
+				FF98892C9D20A12A110E069A /* Authority.swift in Sources */,
+				2B3D573F46AE23CB132B3074 /* Photo.swift in Sources */,
+				EDED211AF733FE7384ADB7D3 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +611,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FE9F0584B63C27385EC10C /* AppDelegate.swift in Sources */,
-				BF28C7E2B572F91D6CA56F04 /* SceneDelegate.swift in Sources */,
-				05B4116961D06EFB9A70C14C /* ViewController.swift in Sources */,
+				297EA902A53380D5CDF9F1C9 /* AppDelegate.swift in Sources */,
+				BF144AC2D830A335F2BA2288 /* AppDependency.swift in Sources */,
+				5A5E67E3D6D551895F5A629F /* CameraCaptureButton.swift in Sources */,
+				51A5B18E51D04A3655962A34 /* CameraToolBar.swift in Sources */,
+				EE46B2586EB32F934F40399A /* EditorDependency.swift in Sources */,
+				A9F03DF03AFC137C20D19E40 /* EditorImageDisplayView.swift in Sources */,
+				4F0823765D2CF5107E6C70DA /* EditorImageViewController.swift in Sources */,
+				E7D08D521758D4C6F536D61D /* EditorImageViewModel.swift in Sources */,
+				EF27C6FD50DDFE2B75975FD7 /* MainCameraViewController.swift in Sources */,
+				FD0E2DD54324A5CEC839A805 /* MainCameraViewModel.swift in Sources */,
+				D78ACC4C2E99B466D3991F4D /* MainViewDependency.swift in Sources */,
+				0B742C84B4EC131B1ED2F8E1 /* MetalViewController.swift in Sources */,
+				655B82A242A4EDDF08333413 /* MetalViewModel.swift in Sources */,
+				466EA7EC6B35B125DB42FCB0 /* NiblessView.swift in Sources */,
+				EE41212A6E2B6A11DE615884 /* NiblessViewController.swift in Sources */,
+				22CD20DFA38846C797255E39 /* PhotoCaptureProcessor.swift in Sources */,
+				967F2B2DFFAF6E5A1D062F55 /* RatioView.swift in Sources */,
+				474F30B9716CCB8CF733889B /* SceneDelegate.swift in Sources */,
+				41D8E419A051CB100DBE517F /* Shader.metal in Sources */,
+				7E7E39544A296FB8C52922FC /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01099316EAE73E6156E5407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72148D634E8934F14FB96BE9 /* MessageQueue.swift in Sources */,
+				5B41F3742235E0F0B41126D9 /* MovieWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +650,31 @@
 			isa = PBXTargetDependency;
 			target = 8EED815AE551847B579335A0 /* Authority */;
 			targetProxy = 6B5F1B59F52E8D4ACF55800B /* PBXContainerItemProxy */;
+		};
+		42927DF958B0C123843D811E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1FA40B2551CEBB2CCE77C69 /* Vincent */;
+			targetProxy = 9038857841FBA2D78C093E07 /* PBXContainerItemProxy */;
+		};
+		8915CB1A80609D58C7980DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DADBCD74824BC7839309521 /* MediaBox */;
+			targetProxy = E55DB6F4606B04A8A3DCA354 /* PBXContainerItemProxy */;
+		};
+		AD4CFC4E49A1B79578C5D1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1FA40B2551CEBB2CCE77C69 /* Vincent */;
+			targetProxy = C55BCE0DED2098AD9B8947D5 /* PBXContainerItemProxy */;
+		};
+		E4BC28CC08D85DEBFA4AB3DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6342E4E59168A024136F7FF6 /* Galilei */;
+			targetProxy = 2D4DBCE50CAD67F4029F9A83 /* PBXContainerItemProxy */;
+		};
+		F9E34A5B3CACE5BAC2085822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EED815AE551847B579335A0 /* Authority */;
+			targetProxy = CB9C0F59673008DBC921F129 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,13 +700,12 @@
 /* Begin XCBuildConfiguration section */
 		0A52BCA79D62F660F6F53246 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E03781188B204BF0E1C579A /* Pods-VCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2JNK7LY8J;
+				DEVELOPMENT_TEAM = 266Y8BZ99E;
 				INFOPLIST_FILE = VCamera/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,9 +715,8 @@
 			};
 			name = Debug;
 		};
-		34E0EF0182F9F66A251B9153 /* Debug */ = {
+		1F20921E352D767DF4A9DD73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDF08CF991690DCB2ED9CC99 /* Pods-VCamera.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -393,7 +725,31 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = MediaBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		34E0EF0182F9F66A251B9153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,21 +758,91 @@
 				PRODUCT_NAME = Authority;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6ADDDAAC00075017173A955A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Galilei;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6D66900A50F231F5D3020A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Galilei;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		81E4AFD39CF3973386698B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = MediaBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		851F0054F22CA0B1BA9B751C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A10548881F0B6E34EF0AF55 /* Pods-VCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2JNK7LY8J;
+				DEVELOPMENT_TEAM = 266Y8BZ99E;
 				INFOPLIST_FILE = VCamera/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +851,30 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		A34FC5B38E1DEF1E5F0AA258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Vincent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
 		};
 		C3E375E75D3742C4CE17C85E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -479,6 +929,30 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D417AF883DCBFE0DE3073550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Vincent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1 2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -547,7 +1021,6 @@
 		};
 		F3BD86CBAA279BA70F295D77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26B3D933D83424C1142AEFE3 /* Pods-VCamera.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -556,7 +1029,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,8 +1038,7 @@
 				PRODUCT_NAME = Authority;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1 2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -601,7 +1073,79 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		CFC570C9ED63BC8D06E5A325 /* Build configuration list for PBXNativeTarget "Vincent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34FC5B38E1DEF1E5F0AA258 /* Debug */,
+				D417AF883DCBFE0DE3073550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E726C57BBEE9076FF1468575 /* Build configuration list for PBXNativeTarget "MediaBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81E4AFD39CF3973386698B1D /* Debug */,
+				1F20921E352D767DF4A9DD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FEE642C6055AD5C0AEBF420A /* Build configuration list for PBXNativeTarget "Galilei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D66900A50F231F5D3020A95 /* Debug */,
+				6ADDDAAC00075017173A955A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D209EC0C26905B4A00E896DA /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		D209EC0F26905BB700E896DA /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D209EC1226905BF300E896DA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D209EC0D26905B4A00E896DA /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EC0C26905B4A00E896DA /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		D209EC1026905BB700E896DA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EC0F26905BB700E896DA /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		D209EC1326905BF300E896DA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EC1226905BF300E896DA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B2D19F58DA875D84AA6D63B /* Project object */;
 }

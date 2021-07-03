@@ -38,7 +38,14 @@ targets:
     dependencies:
     - target : Authority
       embed: false
+    - target: Galilei
+      embed: false
+    - target: Vincent
+      embed: false
+    - target: MediaBox
+      embed: false
     - sdk : AVFoundation.framework
+    - sdk : Photos.framework
     platform: iOS
     sources:
       - path: "VCamera"
