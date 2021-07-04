@@ -60,7 +60,7 @@ class MainCameraViewController: NiblessViewController {
         
         viewModel
             .requireAuthority()
-            .flatMap({ self.viewModel.requireCameraResource($0) })
+            .flatMap({ _ in self.viewModel.cameraManager.readyResources() })
             .receive(on: DispatchQueue.main, options: nil)
             .sink { [weak self] completion in
                 switch completion {

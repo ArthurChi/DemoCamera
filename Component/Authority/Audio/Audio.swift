@@ -15,10 +15,14 @@ extension Authority {
             return AVCaptureDevice.authorizationStatus(for: .audio) == .authorized
         }
         
-        public static func requestAuthority() -> AnyPublisher<Bool, Never> {
-            Future<Bool, Never>.init { promise in
+        public static func requestAuthority() -> AnyPublisher<Bool, AuthorityError> {
+            Future<Bool, AuthorityError>.init { promise in
                 AVCaptureDevice.requestAccess(for: .audio) { result in
-                    promise(.success(result))
+                    if result {
+                        promise(.success(result))
+                    } else {
+                        promise(.failure(AuthorityError.accessDeny))
+                    }
                 }
             }
             .eraseToAnyPublisher()

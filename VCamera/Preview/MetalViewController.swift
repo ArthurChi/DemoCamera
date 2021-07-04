@@ -88,13 +88,14 @@ class MetalViewController: UIViewController {
             })
             .store(in: &events)
         
-//        viewModel
-//            .drawableSizeObservable
-//            .observeOn(MainScheduler.instance)
-//            .subscribe(onNext: { [weak self] (size) in
-//                self?.metalView.drawableSize = size
-//            })
-//        .disposed(by: bag)
+        viewModel
+            .drawableSizePublisher
+            .removeDuplicates()
+            .receive(on: DispatchQueue.main, options: nil)
+            .sink(receiveValue: { [weak self] size in
+                self?.metalView.drawableSize = size
+            })
+            .store(in: &events)
     }
     
     private func topDistance(_ ratio: CameraRatio) -> CGFloat {

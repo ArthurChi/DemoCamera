@@ -30,7 +30,6 @@
 		72148D634E8934F14FB96BE9 /* MessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9520F73EC923E280AD174D2C /* MessageQueue.swift */; };
 		7E7E39544A296FB8C52922FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C85FE54E1BD36C06A47086C /* ViewController.swift */; };
 		80F86D0D5C0D93FC749B5130 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1DB80C207C54AE4F059780 /* float4x4+Extensions.swift */; };
-		8E5A154C28945BC87CF3E00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BC94A111156C13E6508997 /* Main.storyboard */; };
 		967F2B2DFFAF6E5A1D062F55 /* RatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AD837A54540B96B97BEA3 /* RatioView.swift */; };
 		984B69F434F5F988818BF31B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEEB8E93115C86EB35208E0 /* LaunchScreen.storyboard */; };
 		A9F03DF03AFC137C20D19E40 /* EditorImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903A579EA2591CCCA4B38A1 /* EditorImageDisplayView.swift */; };
@@ -111,7 +110,6 @@
 		1F1DB80C207C54AE4F059780 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
 		2637396023E5F99C09EFE6DC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		27AB08A98D39859DFED18791 /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
-		2D4734D0EA6A323380A5907F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C3E54E415343067C00C570 /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
 		36A9EB5A607E0C10DE655953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39AFCB141FCCD33F677E833C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -351,7 +349,6 @@
 				36A9EB5A607E0C10DE655953 /* Assets.xcassets */,
 				5122DA0484B0405AA452862A /* Info.plist */,
 				5AEEB8E93115C86EB35208E0 /* LaunchScreen.storyboard */,
-				90BC94A111156C13E6508997 /* Main.storyboard */,
 				307A46453739348FF6EB936B /* Base */,
 				64923F70005644181BA055FE /* Editor */,
 				5B8D1B77042E2B9A49F497D2 /* Main */,
@@ -567,7 +564,6 @@
 			files = (
 				B284D7D868901DA7EF8C748C /* Assets.xcassets in Resources */,
 				984B69F434F5F988818BF31B /* LaunchScreen.storyboard in Resources */,
-				8E5A154C28945BC87CF3E00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,14 +681,6 @@
 				39AFCB141FCCD33F677E833C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		90BC94A111156C13E6508997 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D4734D0EA6A323380A5907F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
