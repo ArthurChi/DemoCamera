@@ -18,7 +18,11 @@ extension Authority {
         public static func requestAuthority() -> AnyPublisher<Bool, AuthorityError> {
             Future<Bool, AuthorityError>.init { promise in
                 AVCaptureDevice.requestAccess(for: .video) { result in
-                    promise(.success(result))
+                    if result {
+                        promise(.success(result))
+                    } else {
+                        promise(.failure(AuthorityError.accessDeny))
+                    }
                 }
             }
             .eraseToAnyPublisher()

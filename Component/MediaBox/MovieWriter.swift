@@ -42,6 +42,8 @@ public class MovieWriter {
     
     private var startTime: CMTime?
     
+    private var movieWriterSubscription: Subscription?
+    
     public init?(outputURL: URL, options: MovieWriterOption, renderResource: RenderDeivceResource) {
         do {
             writer = try .init(outputURL: outputURL, fileType: .mp4)
@@ -63,6 +65,7 @@ public class MovieWriter {
     }
     
     deinit {
+        print("writer \(#function)")
         inputReadyObserver?.invalidate()
     }
     
@@ -78,7 +81,7 @@ public class MovieWriter {
             inputReadyObserver = videoInput.observe(\.isReadyForMoreMediaData) { [weak self] (input, change) in
                 guard let self = self else { return }
                 
-                DispatchQueue.global().async { [weak self] in
+                DispatchQueue.global().async {
                     print("input.isReadyForMoreMediaData", input.isReadyForMoreMediaData)
                 }
             }
@@ -109,25 +112,35 @@ public extension MovieWriter {
     }
 }
 
-//extension MovieWriter: ObserverType {
-//    public func on(_ event: Event<RenderTexture>) {
-//        switch event {
-//        case .next(let texture):
-//            let ciimage = texture.sourceImage
-//            let time = texture.timeStamp
-//
-//            var pbuf: CVPixelBuffer?
-//
-//            CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, self.result.outputBufferPool!, &pbuf)
-//            ciContext.render(ciimage, to: pbuf!)
-//
-//            add(buffer: .init(pixelBuffer: pbuf!, time: time))
-//        default:
-//            // TODO: CHIJIE
-//            break
-//        }
-//    }
-//}
+extension MovieWriter: Subscriber {
+    public typealias Input = RenderTexture
+    
+    public typealias Failure = Never
+    
+    public func receive(subscription: Subscription) {
+        movieWriterSubscription = subscription
+        subscription.request(.max(1))
+    }
+    
+    public func receive(_ input: RenderTexture) -> Subscribers.Demand {
+        let ciimage = input.sourceImage
+        let time = input.timeStamp
+        
+        var pbuf: CVPixelBuffer?
+        
+        CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, self.result.outputBufferPool!, &pbuf)
+        ciContext.render(ciimage, to: pbuf!)
+        
+        add(buffer: .init(pixelBuffer: pbuf!, time: time))
+        return .max(1)
+    }
+    
+    public func receive(completion: Subscribers.Completion<Never>) {
+        movieWriterSubscription?.cancel()
+        movieWriterSubscription = nil
+        finished()
+    }
+}
 
 func allocateOutputBufferPool(with inputFormatDescription: CMFormatDescription, outputRetainedBufferCountHint: Int) ->(
     outputBufferPool: CVPixelBufferPool?,

@@ -213,9 +213,9 @@ public extension CameraManager {
 
             do {
                 try self.changeInput()
+                self.cameraPos = self.cameraPos.togglePosition
                 self.setupvideoDataOutputConnection(curPostion: self.cameraPos)
                 self.session.commitConfiguration()
-                self.cameraPos = self.cameraPos.togglePosition
             } catch {
                 self.session.commitConfiguration()
             }

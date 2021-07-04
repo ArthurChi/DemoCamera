@@ -41,14 +41,13 @@ class CameraCaptureButton: UIButton {
         addGestureRecognizer(longPressGes)
         
         longPressGes.longPressPublisher
-            .removeDuplicates { $0.state == $1.state }
-            .flatMap { gesture -> AnyPublisher<LongPressState, Never> in
+            .removeDuplicates { $0.state != $1.state }
+            .filter { $0.state == .began || $0.state == .ended }
+            .map { gesture -> CameraCaptureButton.LongPressState in
                 if gesture.state == .began {
-                    return Just(LongPressState.begin).eraseToAnyPublisher()
-                } else if gesture.state == .ended {
-                    return Just(LongPressState.end).eraseToAnyPublisher()
+                    return .begin
                 } else {
-                    return Empty().eraseToAnyPublisher()
+                    return .end
                 }
             }
             .map { Action.longPress($0) }

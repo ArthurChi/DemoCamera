@@ -55,7 +55,7 @@ class MainCameraViewModel {
     
     private var format: CMFormatDescription?
     
-    var sink: Subscribers.Sink<MainCameraViewModelAction, Never>!
+    private var subscription: Subscription?
     
     // MARK: - METHODS
     
@@ -63,27 +63,24 @@ class MainCameraViewModel {
         self.cameraManager = cameraManager
         self.render = render
         photoCaptureProcessor = .init()
-        sink = .init(receiveCompletion: { [weak self] completion in
-            self?.receive(completion: completion)
-        }, receiveValue: { [weak self] value in
-            self?.receive(value)
-        })
     }
     
-    func requireAuthority() -> AnyPublisher<Bool, Never> {
-        Authority.Camera.requestAuthority()
-            .zip(Authority.Audio.requestAuthority()) { result1, result2 in
-                return result1 && result2
-            }
+    deinit {
+        subscription?.cancel()
+    }
+    
+    func requireAuthority() -> AnyPublisher<Bool, Error> {
+        Authority.Camera
+            .requestAuthority()
+            .flatMap({ result -> AnyPublisher<Bool, AuthorityError> in
+                if result {
+                    return Authority.Audio.requestAuthority().eraseToAnyPublisher()
+                } else {
+                    return Fail<Bool, AuthorityError>(error: AuthorityError.accessDeny).eraseToAnyPublisher()
+                }
+            })
+            .mapError { $0 }
             .eraseToAnyPublisher()
-    }
-    
-    func requireCameraResource(_ authorityIsReady: Bool) -> AnyPublisher<Void, Error> {
-        if authorityIsReady {
-            return self.cameraManager.readyResources()
-        } else {
-            return Fail.init(error: CameraManagerError.resourceNotReady).eraseToAnyPublisher()
-        }
     }
     
     func startCamera() {
@@ -97,14 +94,24 @@ class MainCameraViewModel {
     }
 }
 
-extension MainCameraViewModel {
+extension MainCameraViewModel: Subscriber {
     
-    func receive(_ input: MainCameraViewModelAction) {
+    typealias Input = MainCameraViewModelAction
+    
+    typealias Failure = Never
+    
+    func receive(subscription: Subscription) {
+        self.subscription = subscription
+        subscription.request(.unlimited)
+    }
+    
+    func receive(_ input: MainCameraViewModelAction) -> Subscribers.Demand {
         doAction(input)
+        return .unlimited
     }
     
     func receive(completion: Subscribers.Completion<Never>) {
-        
+        subscription?.cancel()
     }
     
     private func doAction(_ action: MainCameraViewModelAction) {
@@ -144,14 +151,11 @@ extension MainCameraViewModel {
                 let a = url.appendingPathComponent("\(Date().timeIntervalSince1970).mp4")
                 movieWriter = MovieWriter(outputURL: a, options: options, renderResource: renderResource)
                 movieWriter?.start()
-                // TODO: CHIJIE
-//                movieWriterBag = render.textureBufferObserver.debug().bind(to: movieWriter!)
+                render.textureBufferPublisher.subscribe(movieWriter!)
             case .end:
                 print("movie writer写入结束")
-                movieWriter?.finished()
+                movieWriter?.receive(completion: .finished)
                 movieWriter = nil
-                // TODO: CHIJIE
-//                movieWriterBag?.dispose()
             }
         }
     }

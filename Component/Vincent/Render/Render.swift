@@ -17,7 +17,7 @@ public protocol RenderInfoProvider: RenderSource {
 
 public class Render: NSObject, RenderInfoProvider {
     
-    public var textureBufferSubject = PassthroughSubject<RenderTexture, Never>()
+    private var textureBufferSubject = PassthroughSubject<RenderTexture, Never>()
     public var textureBufferPublisher: AnyPublisher<RenderTexture, Never> { self.textureBufferSubject.map({ self.filter.render(source: $0) }).eraseToAnyPublisher() }
     
     private var filter: Filter = RosyFilter()

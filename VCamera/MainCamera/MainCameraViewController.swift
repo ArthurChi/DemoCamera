@@ -61,7 +61,6 @@ class MainCameraViewController: NiblessViewController {
         viewModel
             .requireAuthority()
             .flatMap({ _ in self.viewModel.cameraManager.readyResources() })
-            .receive(on: DispatchQueue.main, options: nil)
             .sink { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -69,9 +68,7 @@ class MainCameraViewController: NiblessViewController {
                 case .failure(let err):
                     print(err)
                 }
-            } receiveValue: { _ in
-                
-            }
+            } receiveValue: { _ in }
             .store(in: &events)
         
         viewModel
@@ -80,7 +77,7 @@ class MainCameraViewController: NiblessViewController {
             .map {
                 MainCameraViewModelAction.changeFocusAuto
             }
-            .receive(subscriber: self.viewModel.sink)
+            .subscribe(self.viewModel)
         
         NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification, object: nil)
             .sink { _ in
@@ -168,7 +165,7 @@ class MainCameraViewController: NiblessViewController {
         ratioMenu
             .ratioChangePublisher
             .map({ MainCameraViewModelAction.changeRatio($0) })
-            .receive(subscriber: self.viewModel.sink)
+            .subscribe(self.viewModel)
         
         // toolbar 点击
         toolBar
@@ -176,7 +173,7 @@ class MainCameraViewController: NiblessViewController {
             .sink(receiveValue: { [weak self] action in
                 switch action {
                 case .clickChangeCamera:
-                    let _ = self?.viewModel.sink.receive(.changeCameraPos)
+                    let _ = self?.viewModel.receive(.changeCameraPos)
                 case .clickRatio:
                     self?.ratioBarAnimation()
                 }
@@ -187,7 +184,7 @@ class MainCameraViewController: NiblessViewController {
         changeCameraGes
             .tapPublisher
             .map({ _ in MainCameraViewModelAction.changeCameraPos })
-            .receive(subscriber: self.viewModel.sink)
+            .receive(subscriber: self.viewModel)
         
         // 拍照
         
@@ -201,7 +198,7 @@ class MainCameraViewController: NiblessViewController {
                     return .takeVideo(state)
                 }
             }
-            .receive(subscriber: self.viewModel.sink)
+            .receive(subscriber: self.viewModel)
         
         self.viewModel.takePhotoObservable
             .receive(on: DispatchQueue.main, options: nil)
@@ -228,17 +225,17 @@ class MainCameraViewController: NiblessViewController {
                 let point = gesture.location(in: nil)
                 return MainCameraViewModelAction.changeFocus(point)
             }
-            .receive(subscriber: self.viewModel.sink)
+            .subscribe(self.viewModel)
         
         swipLeftGes
             .swipePublisher
             .map { _ in return MainCameraViewModelAction.changeFilter(.left) }
-            .receive(subscriber: self.viewModel.sink)
+            .subscribe(self.viewModel)
         
         swipRightGes
             .swipePublisher
             .map { _ in return MainCameraViewModelAction.changeFilter(.right) }
-            .receive(subscriber: self.viewModel.sink)
+            .subscribe(self.viewModel)
     }
     
     private func ratioBarAnimation() {
