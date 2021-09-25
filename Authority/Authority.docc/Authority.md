@@ -1,10 +1,10 @@
 # ``Authority``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+用于请求权限
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+整体设计进行遵守相同的函数签名, 但是由于相册的权限请求较为特殊, 所以并没有使用protocol进行约束
 
 ## Topics
 
